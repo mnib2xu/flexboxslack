@@ -1,0 +1,392 @@
+/*
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
+*/
+
+/* LARGE */
+@media (min-width: 1200px) {}
+
+/* MEDIUM */
+@media (min-width: 960px) and (max-width: 1200px) {}
+
+/* SMALL */
+@media (min-width: 767px) and (max-width: 960px) {}
+
+/* TINY */
+@media (max-width: 767px) {}
+
+
+/* General */
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+.boarder-line {
+    border: solid 1px rgb(219, 219, 219);
+    background-color: rgb(219, 219, 219);
+    margin: 25px 0;
+}
+
+.content-container {
+    margin: 0 auto;
+    width: 80%;
+    font-family: serif;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+}
+
+p {
+    color: #5b5e6d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #2C303F;
+}
+
+
+/* Nav Bar */
+nav {
+    top: 0;
+    position:fixed;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid #5b5e6d 1px;
+}
+
+nav img {
+    height: 100%;
+    margin-left: 10%;
+}
+
+nav ul {
+    display: none;
+}
+
+/* Header */
+header {
+    padding-top: 6%;
+}
+header h1 {
+    font-size: 4em;
+}
+
+input {
+    height: 50px;
+    border-radius: 7px;
+    text-align: center;
+    width: 100%;
+    background-color: #F4F3F4;
+    border-color: #F4F3F4;
+    font-size: 1.2em;
+}
+
+header p {
+    font-size: 1.8em;
+    padding-bottom: 20px;
+}
+
+header button {
+    background-color: #192592;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 7px;
+}
+
+header img {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.sign-up-content p {
+    text-align: center;
+}
+
+/* SMALL */
+@media (min-width: 767px) {
+    input {
+        width: 50%;
+    }
+
+    header button {
+        width: 200px;
+    }
+
+    .sign-up-content p {
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    header {
+        display: flex;
+        margin: 2%;
+    }
+
+    header .content-container{
+        order: 2;
+    }
+
+
+    header img {
+        order: 1;
+    }
+}
+
+
+/* MAIN */
+main {
+    background-color: #F4F3F4;
+    padding: 5%;
+}
+
+.centralizer {
+    text-align: center;
+}
+
+main h2 {
+    font-size: 3em;
+}
+
+main p {
+    font-size: 1.9em;
+}
+
+main button {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    color: #192592;
+    font-size: 1.5em;
+    border-radius: 7px;
+    border-color: #192592;
+    margin: 5% 0;
+}
+
+main img {
+    max-height: 100px;
+    max-width: 80%;
+    padding: 30px;
+}
+
+#oracl-tick {
+    max-width: 50%;
+}
+
+@media (min-width: 767px) and (max-width: 960px) {
+    .comp-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main img {
+        width: 30%;
+        height: 30%;
+    }
+    
+    main button {
+        width: 300px;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 960px) {
+    main img {
+        width: 20%;
+        height: 20%;
+    }
+    main button {
+        width: 300px;
+        margin-top: 25px;
+    }
+    
+}
+
+/*----------------- TOP Footer -----------------*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.invitation {
+    text-align: center;
+    background-color: white;
+}
+
+.invitation h3 {
+    font-size: 2.4em;
+    margin: 8% 0 0 0;
+}
+
+.invitation p {
+    font-size: 1.8em;
+    margin: 0 0 2% 0;
+}
+
+.invitation button {
+    background-color: #192592;
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 7px;
+    border-color: white;
+}
+
+@media (min-width: 767px) {
+    .invitation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .invite-text {
+        text-align: left;
+        margin-right: 15px;
+    }
+
+    .invitation button {
+        width: 300px;
+        margin-top: 25px;
+    }
+}
+
+
+/*----------- MID Footer--------------- */
+.flex-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: left;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    width: 35%;
+    position: relative;
+    left: -25px;
+    margin-right: 5%;
+    font-size: 1em;
+    list-style: none;
+}
+
+footer li {
+    margin: 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bottom-footer {
+    background-color: #F4F3F4;
+    width: 100%;
+}
+
+.logo-footer img {
+    display: grid;
+    flex: 1 100%;
+    width: 150px;
+    position: relative;
+    left: -50px;
+}
+
+@media (min-width: 767px) {
+    .flex-footer {
+        flex: 1 20%;
+    }
+
+    .logo-footer img {
+        flex: 1 20%;
+    }
+
+    .flex-container {
+        flex: 1 20%;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+}
+
+
+
+
+/* -----------------SHITHOLE FOOTER ------------------- */
+
+.top-items-footer ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+.top-items-footer li {
+    width: 30%;
+}
+
+.lang-selector {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.lang-selector img {
+    height: 20px;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.social-logos i {
+    margin: 35px 3%;
+    color: grey;
+}
+
+@media (min-width: 767px) {
+    .top-items-footer ul {
+        width: 50%;
+    }
+
+    .top-items-footer {
+        flex-wrap: nowrap;
+        display: static;
+        width: 100%;
+    }
+
+    .lang-selector {
+        width: 30%;
+    }
+
+    .bottom-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .bottom-footer div {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
